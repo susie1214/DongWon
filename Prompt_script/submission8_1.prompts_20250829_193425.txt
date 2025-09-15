@@ -1,0 +1,587 @@
+### PRODUCT: 덴마크 하이그릭요거트 400g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 덴마크 하이그릭요거트 400g
+- 카테고리: 우유류 > 발효유 > 호상-중대용량
+- 가격(원): 2980.0
+- 제품 특성: 이중 유청분리 공법, 꾸덕한 질감, 고소함, 호상(떠먹는) 발효유, 고단백, 아연, 칼슘, 6-7월 TV/Youtube/SNS 광고 진행, 6-8월 수도권 중심 아파트 엘리베이터 광고, 광고모델: 일반인
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 건강/다이어트 시즌: 1월, 5-6월 수요↑.
+- 고단백/저지방 트렌드.
+- 건강 이미지 광고효과↑.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+- 광고모델 효과: 20~30대 여성·수도권에서 구매확률↑(약 1.2배)로 반영.
+- SNS 바이럴: 출시 초 1~3개월 빈도↑(약 1.15배)로 반영.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원맛참 고소참기름 135g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원맛참 고소참기름 135g
+- 카테고리: 참치 > 참치캔 > 라이트스탠다드참치
+- 가격(원): 3980.0
+- 제품 특성: 광고모델: 안유진, 참기름 풍미, 단백질, 셀레늄, 고소
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+- 광고모델 효과: 20~30대 여성·수도권에서 구매확률↑(약 1.2배)로 반영.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원맛참 고소참기름 90g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원맛참 고소참기름 90g
+- 카테고리: 참치 > 참치캔 > 라이트스탠다드참치
+- 가격(원): 2980.0
+- 제품 특성: 광고모델: 안유진, 참기름 풍미, 단백질, 셀레늄, 고소
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+- 광고모델 효과: 20~30대 여성·수도권에서 구매확률↑(약 1.2배)로 반영.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원맛참 매콤참기름 135g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원맛참 매콤참기름 135g
+- 카테고리: 참치 > 참치캔 > 라이트스탠다드참치
+- 가격(원): 3980.0
+- 제품 특성: 광고모델: 안유진, 참기름 풍미, 단백질, 셀레늄, 매콤
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+- 광고모델 효과: 20~30대 여성·수도권에서 구매확률↑(약 1.2배)로 반영.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원맛참 매콤참기름 90g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원맛참 매콤참기름 90g
+- 카테고리: 참치 > 참치캔 > 라이트스탠다드참치
+- 가격(원): 2980.0
+- 제품 특성: 광고모델: 안유진, 참기름 풍미, 단백질, 셀레늄, 매콤
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+- 광고모델 효과: 20~30대 여성·수도권에서 구매확률↑(약 1.2배)로 반영.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원참치액 순 500g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원참치액 순 500g
+- 카테고리: 조미소스 > 조미료 > 액상조미료
+- 가격(원): 4980.0
+- 제품 특성: 훈연참치추출물 80%, 참치엑기스, 직접 잡은 참치, 가쓰오엑기스, 표고버섯, 무, 감초, 마늘
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원참치액 순 900g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원참치액 순 900g
+- 카테고리: 조미소스 > 조미료 > 액상조미료
+- 가격(원): 6980.0
+- 제품 특성: 훈연참치추출물 80%, 참치엑기스, 직접 잡은 참치, 가쓰오엑기스, 표고버섯, 무, 감초, 마늘
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원참치액 진 500g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원참치액 진 500g
+- 카테고리: 조미소스 > 조미료 > 액상조미료
+- 가격(원): 5280.0
+- 제품 특성: 훈연참치추출물 80%, 진한 풍미, 가쓰오엑기스, 표고버섯, 무, 감초, 마늘
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 동원참치액 진 900g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 동원참치액 진 900g
+- 카테고리: 조미소스 > 조미료 > 액상조미료
+- 가격(원): 7280.0
+- 제품 특성: 훈연참치추출물 80%, 진한 풍미, 가쓰오엑기스, 표고버섯, 무, 감초, 마늘
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 리챔 오믈레햄 200g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 리챔 오믈레햄 200g
+- 카테고리: 축산캔 > 고급축산캔 > 가미축산캔
+- 가격(원): 4980.0
+- 제품 특성: 오믈렛(Omelet)+햄(Ham), 저나트륨, 내열성 케첩 소스
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 방학/시험/직장인 점심 수요 변동.
+- 온라인 장보기/구독 반복 구매.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 리챔 오믈레햄 340g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 리챔 오믈레햄 340g
+- 카테고리: 축산캔 > 고급축산캔 > 가미축산캔
+- 가격(원): 6980.0
+- 제품 특성: 오믈렛(Omelet)+햄(Ham), 저나트륨, 내열성 케첩 소스
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 방학/시험/직장인 점심 수요 변동.
+- 온라인 장보기/구독 반복 구매.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 소화가 잘되는 우유로 만든 바닐라라떼 250mL
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 소화가 잘되는 우유로 만든 바닐라라떼 250mL
+- 카테고리: 우유류 > 커피 > 커피-CUP
+- 가격(원): 2500.0
+- 제품 특성: 락토프리, 저온효소 처리, 유당 ZERO, 저당 트렌드, 신선 1등급 원유, SNS 바이럴 2-6월, 광고 X
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 기온 민감: 7-8월 수요 급증.
+- 겨울 따뜻한 음료 전환.
+- 편의점 1+1/멀티팩 민감.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+- SNS 바이럴: 출시 초 1~3개월 빈도↑(약 1.15배)로 반영.
+- 건강 트렌드: 20~40대 건강 관심층 재구매율↑(약 1.1배)로 반영.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 소화가 잘되는 우유로 만든 카페라떼 250mL
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 소화가 잘되는 우유로 만든 카페라떼 250mL
+- 카테고리: 우유류 > 커피 > 커피-CUP
+- 가격(원): 2500.0
+- 제품 특성: 락토프리, 저온효소 처리, 유당 ZERO, 저당 트렌드, 신선 1등급 원유, SNS 바이럴 2-6월, 광고 X
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 기온 민감: 7-8월 수요 급증.
+- 겨울 따뜻한 음료 전환.
+- 편의점 1+1/멀티팩 민감.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+- SNS 바이럴: 출시 초 1~3개월 빈도↑(약 1.15배)로 반영.
+- 건강 트렌드: 20~40대 건강 관심층 재구매율↑(약 1.1배)로 반영.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 프리미엄 동원참치액 500g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 프리미엄 동원참치액 500g
+- 카테고리: 조미소스 > 조미료 > 액상조미료
+- 가격(원): 5980.0
+- 제품 특성: 훈연참치추출물 85%, 프리미엄 블렌드, 가쓰오엑기스, 표고버섯, 무, 감초, 마늘
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
+### PRODUCT: 프리미엄 동원참치액 900g
+너는 동원참치 마케팅 부서에서 오래 근무했고 현재는 본사 재고관리 담당 30년차 부장이다.
+경영학·경제학 관점에서 수익성(마진), 성장성(판매량), 재고회전, 납품 안정성, 소비자/바이어 심리를 모두 고려해 판단한다.
+
+아래 제품에 대해, '싱글 턴(single turn)'으로 소비자/바이어 페르소나를 정확히 80명 생성하라.
+각 페르소나는 최소 10개 이상의 속성과 각 속성별 영향 가중치(0~1)를 포함하고,
+월별 구매 빈도 패턴(12개월: 7월~다음해 6월, 합=1.0)과 구매 확률(%)을 제공한다.
+
+페르소나 타깃은 개인소비자뿐 아니라 B2B(식자재/급식/편의점/대형마트 바이어), 공공기관 구매담당, 해외 바이어도 포함한다.
+- B2B/기관은 대량구매 특성상 weight는 상대적으로 높이고, 구매확률은 낮게 설정하라.
+- B2B/기관의 월별 빈도는 명절/학기/계약 갱신 시점에 뾰족하게(frequency↑) 배분하라.
+- 개인소비자는 리뷰·가격·프로모션·광고모델의 영향을 더 크게 받는다.
+
+제품 정보:
+- 제품명: 프리미엄 동원참치액 900g
+- 카테고리: 조미소스 > 조미료 > 액상조미료
+- 가격(원): 7980.0
+- 제품 특성: 훈연참치추출물 85%, 프리미엄 블렌드, 가쓰오엑기스, 표고버섯, 무, 감초, 마늘
+
+카테고리 맥락:
+- 공통: 설(1-2월), 추석(9-10월), 연말(12월) 수요 상승 가능성.
+- 11월: 코리아세일페스타·블랙프라이데이 등 판촉 강화.
+- 학사: 3·9월 개학/개강, 1-2·7-8월 방학으로 가정 내 소비 패턴 변화.
+- 원자재/운임 변동 → 가격/프로모션 민감.
+- 비축/대량구매 스파이크.
+
+출력 형식:
+- 도구 호출(function call)로만 답변한다(추가 텍스트 금지). 인자는 'personas' 배열 하나뿐이다.
+- personas[i] 필수 키: name, weight, attributes{최소10개}, attribute_weights{0~1}, purchase_probability_pct, monthly_purchase_frequency(길이12, 합=1)
+
+구체적 가이드:
+- 속성 예: age, gender, income_band, region_kr, education, marital_status, household_size,
+           channel_preference(ON/OFF/MIXED), price_sensitivity, promotion_sensitivity, brand_loyalty,
+           innovation_seeking, review_dependence, sustainability_preference, risk_aversion,
+           buyer_type(개인/기업/공공/해외), org_size, contract_cycle, channel(B2C/B2B) 등
+- 광고모델/저당/락토프리/SNS 바이럴 등 제품 특성에 맞춰 타깃군/시즌성 보정하라.
+반드시 함수 호출로만(personas 인자) 답하라.
+
