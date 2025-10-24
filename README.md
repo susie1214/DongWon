@@ -1,95 +1,139 @@
-# 2025 동원 × KAIST AI Competition
+🧠 2025 동원 × KAIST AI Competition
+---
+Unlocking Future Sales & Demographics
 
-
-##  대회 개요
-- **대회명**  
-  2025 동원 × KAIST AI Competition: Unlocking Future Sales & Demographics  
-- **주최/주관**  
-  동원그룹, KAIST (김재철 AI대학원)  
-- **후원**  
-  AWS, Microsoft, PwC  
-- **운영 플랫폼**  
-  데이콘(DACON) (https://dacon.io/en/competitions/official/236546/overview/description)
+소비자 페르소나 기반 신제품 월별 수요 예측 프로젝트
 
 ---
-
-##  대회 배경
-동원그룹은 조직 내 AI 문해력(AI literacy) 강화를 위해 내부 챗봇 '동원GPT'를 도입하고 사내 AI 경진대회를 추진해 왔습니다.  
-KAIST와 공동으로 AI 인재 양성을 위한 김재철 AI대학원을 설립하는 등 국가 AI 역량 강화에도 기여하고 있습니다. 이러한 기반 위에서, KAIST와 협력하여 **2025년 AI Competition**을 개최하며 인재 발굴과 혁신 기술 발시에 중점을 두고 있습니다.  
-
----
-
-##  대회 주제
-**소비자 페르소나 기반 동원 신제품 월별 수요 예측**  
-참가자는 언어모델(LLM)을 활용해 가상의 소비자 페르소나를 생성하고, 이를 기반으로 동원 신제품 출시 후 **2024년 7월부터 2025년 6월까지의 월별 판매량**을 예측합니다.  
+📘 대회 개요
+구분	내용
+대회명	2025 동원 × KAIST AI Competition: Unlocking Future Sales & Demographics
+주최/주관	동원그룹 · KAIST 김재철 AI대학원
+후원	AWS, Microsoft, PwC
+운영 플랫폼	DACON 공식 페이지
+기간	2024.12 ~ 2025.03 (예선 및 본선 포함)
 
 ---
+🎯 대회 배경
 
-##  문제 상세 가이드
-1. **페르소나 설계**
-   - LLM을 활용해 가상의 소비자 페르소나 생성.
-   - 최소 10가지 속성 (연령, 성별, 소득 구간 등)을 포함하고, 각 속성에 가중치를 부여해야 함.
-   - 각 페르소나당 구매 확률(%) 및 월별 구매 빈도 패턴 제시.
-   - 프롬프트는 **‘싱글 턴(single-turn)’** 구조여야 하며, 제품별 또는 전체 제품 단위로 적용 가능.
+동원그룹은 내부 챗봇 ‘동원GPT’ 도입을 통해 AI 문해력(AI Literacy) 강화를 추진해 왔으며,
+KAIST 김재철 AI대학원과의 협력으로 산학연계형 AI 인재 발굴 및 기술 내재화를 목표로 한다.
 
-2. **참고 데이터 활용**
-   - 시장 트렌드, 계절성, 프로모션 및 광고와 같은 이벤트 효과 반영.
-   - 유사 제품군의 시장 데이터 수집 및 활용.
-   - 유통 구조 상 제품 가격에 발생할 수 있는 할인·프로모션 요소 고려.
+이번 대회는
+“소비자 페르소나(persona)”를 생성하고 이를 기반으로 신제품의 월별 판매량을 예측하는 문제를 중심으로 한다.
 
-3. **예측 방식**
-   - 학습 기반 모델 또는 시뮬레이션·계산 기반 방식 자유 선택 가능.
+---
+🧩 문제 정의
+▪ 주제
 
---- 
-Using LLMs for Market Research
+소비자 페르소나 기반 동원 신제품 월별 수요 예측 (2024.07 ~ 2025.06)
 
-James Brand (Microsoft), Ayelet Israeli (Harvard Business School), Donald Ngwe (Microsoft)
-Working Paper 23-062, Harvard Business School | October 2025
+참가자는 LLM을 활용해 가상의 소비자 페르소나를 생성하고,
+각 페르소나의 속성과 행동 패턴을 기반으로 신제품의 월별 판매량을 예측한다.
 
-🔍 Overview
+---
+🧠 페르소나 설계 가이드
 
-이 연구는 대형언어모델(LLM) — 특히 OpenAI GPT — 을 시장조사 (Market Research) 에 활용할 수 있는 가능성을 탐구한다.
-전통적 설문이나 컨조인트 조사 없이 LLM을 가상 소비자로 활용해 소비자 선호 및 지불의사금액 (WTP)을 추정하는 방법을 제시한다.
+LLM 활용: ChatGPT, Claude, Gemini, LLaMA 등 자유 선택
 
-🧠 Core Idea
+속성 구성: 최소 10개 이상 (연령, 성별, 지역, 소득, 직업, 구매력, 라이프스타일, 관심사 등)
 
-GPT 응답을 “단일 정답”이 아닌 확률분포로 간주해 여러 응답을 샘플링 → 응답 분포 분석 으로 소비자 행동 시뮬레이션
+가중치 설정: 각 속성별 영향도(%)를 정의
 
-실제 사람을 대체하지는 않지만, 빠르고 저비용으로 시장 반응을 예측 및 테스트 가능
+행동 패턴: 월별 구매 확률 및 빈도
 
-기존 인간 조사 데이터를 파인튜닝에 활용하면 응답 정합성이 향상
+프롬프트 형태: Single-turn 구조 (한 번의 입력으로 일관된 페르소나 생성)
 
-⚙️ Research Design
+---
+📈 예측 모델 설계
+🔹 데이터 활용
 
-모델 – OpenAI gpt-3.5-turbo-0125 기반, Python API 직접 호출
+시장 트렌드, 계절성, 프로모션, 광고 이벤트 효과 반영
 
-실험 설계 – 컨조인트 분석 (conjoint analysis) 방식으로 상품 속성별 WTP 추정
+유사 제품군(참치캔, 간편식, HMR 등)의 과거 판매데이터 수집
 
-비교군 – Fong et al. (2023) 실제 소비자 설문 + 연구진이 직접 수집한 5개 제품군 (치약, 노트북, 태블릿 등)
+할인율, 유통 경로, 프로모션 요소를 변수화
 
-샘플링 – 각 선택 세트별 수십 ~ 수백 회 프롬프트 반복, 온도 1.0 설정
+🔹 예측 방식
 
-📊 Key Findings
+학습 기반 모델: LightGBM, XGBoost, CatBoost, Prophet, LSTM, Transformer
 
-현실적 WTP 추정: GPT가 추정한 가격민감도 및 속성선호가 인간 조사와 근사함.
+시뮬레이션 기반 모델: LLM+RAG 기반 페르소나 응답 시뮬레이션
 
-파인튜닝 효과: 기존 조사로 미세조정하면 새 제품 속성에 대한 예측 정확도 향상.
+하이브리드: LLM 추정 구매확률을 구조적 모델(Input Feature)로 결합
 
-제한점: 새로운 제품 카테고리 또는 소비자 세그먼트 이질성 (성별·소득 차이 등) 모사는 부정확.
-
-모델 비교: GPT-3.5 및 GPT-4o 는 사람과 유사, Claude · LLaMA 계열은 편차 큼.
-
-비용 및 확장성: 1회 조사 수백 달러 수준이지만 오픈소스 LLM 활용 시 비용 대폭 절감 가능.
-
-💡 Implications
-
-마케팅 전략 시뮬레이션 : 제품 출시 전 가상 시장 테스트 및 가격 민감도 예측 도구로 활용.
-
-인간 조사의 보완재 : 컨셉 검증 및 가설 선별 단계에서 빠른 의사결정 지원.
-
-미래 전망 : 디지털 트윈 · LLM-기반 소비자 시뮬레이션 등 새로운 시장조사 패러다임 기대.
-
-🧾 Citation
+🔬 참고 연구 — Using LLMs for Market Research (Harvard Business School, 2025)
 
 Brand, J., Israeli, A., & Ngwe, D. (2025). Using LLMs for Market Research. Working Paper 23-062, Harvard Business School.
+
 ---
+🔍 핵심 개념
+
+LLM(GPT)을 가상 소비자(simulated consumer) 로 활용해
+전통적 설문 없이 제품 속성별 지불의사금액(WTP) 추정
+
+응답을 단일 값이 아닌 확률분포(Distributional Response) 로 간주
+
+Fine-tuning 을 통해 인간 응답과의 일치도 향상
+
+---
+📊 주요 결과
+
+GPT 기반 컨조인트 분석 결과가 실제 소비자 조사와 근사
+
+새로운 제품 속성(예: 노트북 내장 프로젝터)에 대해서도 예측 가능
+
+GPT-3.5 / GPT-4 모델은 사람과 유사한 패턴을 보임
+
+세그먼트별(성별, 소득, 지역) 이질성 반영은 아직 제한적
+
+---
+💡 시사점
+
+LLM 기반 시장조사는 인간을 대체하기보다
+**“아이디어 탐색–가설 검증–시장 반응 예측”**의 보조 수단 으로 활용 가능
+
+---
+🧮 구현 예시 (LLM 시뮬레이션 코드 요약)
+from openai import OpenAI
+client = OpenAI(api_key="YOUR_API_KEY")
+
+prompt = """
+You are a 35-year-old female office worker with mid-level income,
+shopping for ready-to-eat tuna meals.
+Considering price, nutrition, and taste,
+how likely (0-100%) are you to purchase this product monthly?
+"""
+
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": prompt}],
+    temperature=1.0
+)
+
+print(response.choices[0].message.content)
+
+---
+📂 Repository Structure
+DongWon/
+ ├── data/               # 예측용 입력 데이터셋 (판매, 트렌드, 이벤트 등)
+ ├── persona/            # LLM 기반 페르소나 생성 및 속성 가중치 코드
+ ├── models/             # 수요 예측 및 시뮬레이션 모델
+ ├── notebooks/          # EDA 및 실험용 주피터 노트북
+ ├── outputs/            # 결과 CSV / 시각화 이미지
+ └── README.md
+
+---
+🧩 기대 효과
+
+AI 기반 소비자 모델링 : 페르소나를 통한 정성적·정량적 수요 예측
+
+제품 출시 리스크 최소화 : 가상 시장 실험을 통한 사전 검증
+
+AI Literacy 확산 : 기업 내 데이터·AI 활용 문화 확립
+
+---
+🏁 Reference & Citation
+
+Brand, J., Israeli, A., & Ngwe, D. (2025). Using LLMs for Market Research. Harvard Business School Working Paper 23-062.
+DACON: 2025 동원 × KAIST AI Competition
