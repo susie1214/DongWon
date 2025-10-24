@@ -41,4 +41,55 @@ KAIST와 공동으로 AI 인재 양성을 위한 김재철 AI대학원을 설립
    - 학습 기반 모델 또는 시뮬레이션·계산 기반 방식 자유 선택 가능.
 
 --- 
+Using LLMs for Market Research
 
+James Brand (Microsoft), Ayelet Israeli (Harvard Business School), Donald Ngwe (Microsoft)
+Working Paper 23-062, Harvard Business School | October 2025
+
+🔍 Overview
+
+이 연구는 대형언어모델(LLM) — 특히 OpenAI GPT — 을 시장조사 (Market Research) 에 활용할 수 있는 가능성을 탐구한다.
+전통적 설문이나 컨조인트 조사 없이 LLM을 가상 소비자로 활용해 소비자 선호 및 지불의사금액 (WTP)을 추정하는 방법을 제시한다.
+
+🧠 Core Idea
+
+GPT 응답을 “단일 정답”이 아닌 확률분포로 간주해 여러 응답을 샘플링 → 응답 분포 분석 으로 소비자 행동 시뮬레이션
+
+실제 사람을 대체하지는 않지만, 빠르고 저비용으로 시장 반응을 예측 및 테스트 가능
+
+기존 인간 조사 데이터를 파인튜닝에 활용하면 응답 정합성이 향상
+
+⚙️ Research Design
+
+모델 – OpenAI gpt-3.5-turbo-0125 기반, Python API 직접 호출
+
+실험 설계 – 컨조인트 분석 (conjoint analysis) 방식으로 상품 속성별 WTP 추정
+
+비교군 – Fong et al. (2023) 실제 소비자 설문 + 연구진이 직접 수집한 5개 제품군 (치약, 노트북, 태블릿 등)
+
+샘플링 – 각 선택 세트별 수십 ~ 수백 회 프롬프트 반복, 온도 1.0 설정
+
+📊 Key Findings
+
+현실적 WTP 추정: GPT가 추정한 가격민감도 및 속성선호가 인간 조사와 근사함.
+
+파인튜닝 효과: 기존 조사로 미세조정하면 새 제품 속성에 대한 예측 정확도 향상.
+
+제한점: 새로운 제품 카테고리 또는 소비자 세그먼트 이질성 (성별·소득 차이 등) 모사는 부정확.
+
+모델 비교: GPT-3.5 및 GPT-4o 는 사람과 유사, Claude · LLaMA 계열은 편차 큼.
+
+비용 및 확장성: 1회 조사 수백 달러 수준이지만 오픈소스 LLM 활용 시 비용 대폭 절감 가능.
+
+💡 Implications
+
+마케팅 전략 시뮬레이션 : 제품 출시 전 가상 시장 테스트 및 가격 민감도 예측 도구로 활용.
+
+인간 조사의 보완재 : 컨셉 검증 및 가설 선별 단계에서 빠른 의사결정 지원.
+
+미래 전망 : 디지털 트윈 · LLM-기반 소비자 시뮬레이션 등 새로운 시장조사 패러다임 기대.
+
+🧾 Citation
+
+Brand, J., Israeli, A., & Ngwe, D. (2025). Using LLMs for Market Research. Working Paper 23-062, Harvard Business School.
+---
